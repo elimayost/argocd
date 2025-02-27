@@ -1,0 +1,9 @@
+apiVersion: v2
+name: prefect-server
+description: A Helm chart that pulls prefect as a dependency
+version: 0.0.1
+type: application
+dependencies:
+  - name: prefect-server
+    version: "2025.2.21193831"
+    repository: "https://prefecthq.github.io/prefect-helm"
