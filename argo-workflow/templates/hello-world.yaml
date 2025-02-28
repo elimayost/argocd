@@ -3,6 +3,7 @@ kind: Workflow
 metadata:
   name: hello-world
 spec:
+  serviceAccountName: argo-workflow-argo-workflows-workflow-controller
   entrypoint: hello
   templates:
   - name: hello
