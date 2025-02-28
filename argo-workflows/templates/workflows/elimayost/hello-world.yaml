@@ -2,8 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
   name: hello-world
-  	annotations:
-   		argocd.argoproj.io/sync-options: Prune=true
+    annotations:
+      argocd.argoproj.io/sync-options: Prune=true
 spec:
   serviceAccountName: workflows-user
   podGC:
