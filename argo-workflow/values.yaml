@@ -1,3 +1,4 @@
-server:
-  extraArgs:
-    - --auth-mode=server
+argo-workflows:
+	server:
+	  extraArgs:
+	    - --auth-mode=server
