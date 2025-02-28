@@ -1,8 +1,5 @@
 
 argo-cd:
-  metadata:
-  	annotations:
-   		argocd.argoproj.io/sync-options: Prune=true
   configs:
     cm:
       timeout.reconciliation: 60s
