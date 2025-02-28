@@ -22,7 +22,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: workflows-user
-    namespace: argo-workflow
+    namespace: argo-workflows
 roleRef:
   kind: Role
   name: workflows-user-role
