@@ -6,6 +6,7 @@ spec:
   serviceAccountName: workflows-user
   podGC:
     strategy: OnPodSuccess
+  suspend: true
   entrypoint: hello
   templates:
   - name: hello
