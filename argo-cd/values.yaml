@@ -2,4 +2,4 @@
 argo-cd:
   configs:
     cm:
-      timeout.reconciliation: 60s
+      timeout.reconciliation: 10s
