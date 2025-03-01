@@ -3,5 +3,4 @@ configs:
   cm:
     timeout.reconciliation: 10s
 
-params:
-  application.namespaces: "*"
+application.namespaces: "*"
