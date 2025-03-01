@@ -4,6 +4,9 @@ metadata:
   name: argo-workflows
 spec:
   project: default
+	syncPolicy:
+		automated:
+			selfHeal: true
   source:
     repoURL: git@github.com:elimayost/helm-charts.git
     targetRevision: HEAD
