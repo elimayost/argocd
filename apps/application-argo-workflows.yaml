@@ -4,9 +4,6 @@ metadata:
   name: argo-workflows
 spec:
   project: default
-	syncPolicy:
-		automated:
-			selfHeal: true
   source:
     repoURL: git@github.com:elimayost/helm-charts.git
     targetRevision: HEAD
@@ -14,3 +11,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: argo-workflows
+  syncPolicy:
+    automated:
+      prune: true     # Deletes resources not in Git
+      selfHeal: true  # Fixes drift automatically
