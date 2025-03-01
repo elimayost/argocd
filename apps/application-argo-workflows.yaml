@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-workflows
+	namespace: argo-workflows
 spec:
   project: default
   source:
@@ -9,5 +10,5 @@ spec:
     targetRevision: HEAD
     path: argo-workflows
   destination:
-    namespace: argo-workflows
     server: https://kubernetes.default.svc
+    namespace: argo-workflows
