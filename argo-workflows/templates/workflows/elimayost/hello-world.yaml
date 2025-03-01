@@ -4,8 +4,6 @@ metadata:
   name: hello-world
 spec:
   serviceAccountName: workflows-user
-  podGC:
-    strategy: OnPodSuccess
   entrypoint: hello
   templates:
   - name: hello
